@@ -769,13 +769,44 @@ body {
   color: #757575;
 }
 
-.modal-checkbox-icon {
+.checkbox-text span {
+  width: 16px;
+  height: 16px;
+  border: 1.25px solid var(--dark-color);
+  border-radius: 2px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: transparent;
 }
 
-.modal-checkbox-icon: .checkbox-link {
+.checkbox-text {
+  display: flex;
+}
+
+.checkbox-input:checked + .checkbox-text span {
+  background-color: var(--pressed-state-color);
+  border: none;
+  fill: var(--light-color);
+}
+
+.checkbox-link {
   color: var(--primary-brand-color);
 }
 
 .checkbox-link:visited {
   color: rgb(85, 26, 139);
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
 }

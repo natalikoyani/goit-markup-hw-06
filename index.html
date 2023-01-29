@@ -494,25 +494,27 @@
             ></textarea>
           </div>
           <div class="modal-field-checkbox">
-            <label for="privacy-policy">
-              <input
-                type="checkbox"
-                class="modal-checkbox-icon"
-                name="privacy-policy"
-                id="privacy-policy"
-                value="accept"
-              />
+            <input
+              type="checkbox"
+              name="privacy-policy"
+              id="privacy-policy"
+              value="true"
+              class="checkbox-input visually-hidden"
+            />
+            <label for="privacy-policy" class="checkbox-text">
+              <span>
+                <svg class="checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use></svg
+              ></span>
               I accept the terms and conditions of the
-              <span
-                ><a
-                  href=""
-                  class="checkbox-link"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  >Privacy Policy</a
-                ></span
-              ></label
-            >
+              <a
+                href=""
+                class="checkbox-link"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Privacy Policy
+              </a>
+            </label>
           </div>
           <button type="submit" class="modal-submit-btn">Send</button>
         </form>
