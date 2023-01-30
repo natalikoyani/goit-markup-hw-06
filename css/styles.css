@@ -481,6 +481,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  color: var(--light-color);
 }
 
 .subscribe-btn {
@@ -496,12 +497,19 @@ body {
   border: none;
   transition: background-color var(--transition-time),
     box-shadow var(--transition-time);
+  display: flex;
+  align-items: center;
 }
 
 .subscribe-btn:hover,
 .subscribe-btn:focus {
   background-color: var(--pressed-state-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.subscribe-icon {
+  fill: var(--background-color);
+  margin-left: 16px;
 }
 
 /* -------PORTFOLIO--------- */
@@ -650,9 +658,12 @@ body {
   background-color: var(--accent-color);
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
-.modal-close-btn:active {
+.modal-close-btn:active,
+.modal-close-btn:hover,
+.modal-close-btn:focus {
   fill: var(--background-color);
   background-color: var(--pressed-state-color);
 }
@@ -664,7 +675,7 @@ body {
 }
 
 .modal-title {
-  margin-bottom: 24px;
+  margin-bottom: 14px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -674,7 +685,7 @@ body {
 }
 
 .modal-field {
-  margin-bottom: 26px;
+  margin-bottom: 8px;
 }
 
 .modal-input {
@@ -793,10 +804,7 @@ body {
 
 .checkbox-link {
   color: var(--primary-brand-color);
-}
-
-.checkbox-link:visited {
-  color: rgb(85, 26, 139);
+  margin-left: 3px;
 }
 
 .visually-hidden {
